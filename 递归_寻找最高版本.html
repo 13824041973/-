@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 找出最高版本
+        let versions = ['1.0.20.3', '2.0.3', '3.6.27.1', '3.14.5'];
+        function MaxVersion(versions) {
+            let arr = [];//[[1,0,20,3],[2,0,3],[],[]]
+            versions.forEach(item => {
+                arr.push(item.split('.'))
+            });
+            return compare(arr, 0);
+        };
+        function compare(arr, index) {
+            if (arr.length == 1) return arr[0].join('.');
+            let max = 0;//1
+            for (let i = 0; i < arr.length; i++) {
+                max = Math.max(max, arr[i][index])
+            }
+            const newArr = arr.filter(item => item[index] == max)
+            return compare(newArr, ++index)
+        }
+        console.log(MaxVersion(versions));
+    </script>
+</body>
+
+</html>
