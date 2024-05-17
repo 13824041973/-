@@ -1,0 +1,16 @@
+{
+  "name": "ajax",
+  "version": "1.0.0",
+  "main": "ajax.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.17.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ajax": "json-server data/data.json"
+  },
+  "description": ""
+}

@@ -15,7 +15,7 @@ Function.prototype.myCall = function (ctx, ...args) {
     delete ctx[key]
     return result
 }
-fn.myCall({}, 1, 2);
+console.log(fn.myCall({}, 1, 2));
 // fn.call({},1,2);
 
 

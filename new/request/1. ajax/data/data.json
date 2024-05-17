@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "xianzao"
+    },
+    {
+      "firstName": "Fred",
+      "lastName": "Flintstone",
+      "id": 2
+    },
+    {
+      "firstName": "Fred",
+      "lastName": "Flintstone",
+      "id": 3
+    },
+    {
+      "firstName": "Fred",
+      "lastName": "Flintstone",
+      "id": 4
+    },
+    {
+      "firstName": "Fred",
+      "lastName": "Flintstone",
+      "id": 5
+    },
+    {
+      "firstName": "Fred",
+      "lastName": "Flintstone",
+      "id": 6
+    },
+    {
+      "firstName": "Fred",
+      "lastName": "Flintstone",
+      "id": 7
+    },
+    {
+      "firstName": "Fred",
+      "lastName": "Flintstone",
+      "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "xianzao"
+  }
+}
